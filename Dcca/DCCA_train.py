@@ -55,10 +55,10 @@ class Solver():
         x1 = x1.to(self.device)
         x2 = x2.to(self.device)
 
-        if checkpoint is not None:
-            checkpoint_ = torch.load(checkpoint)
-            solver.model.load_state_dict(checkpoint_)
-            print("加载模型{}进行训练".format(checkpoint))
+        #if checkpoint is not None:
+        #    checkpoint_ = torch.load(checkpoint)
+        #    solver.model.load_state_dict(checkpoint_)
+        #    print("加载模型{}进行训练".format(checkpoint))
 
         data_size = x1.size(0)
 
